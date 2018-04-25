@@ -76,11 +76,7 @@ class Person
   def call_friend (friend)
     self.happiness = @happiness + 3
     friend.happiness += 3
-    if friend == "Penelope"
-      return "Hi Felix! It's Penelope. How are you?"
-    elsif friend == "Felix"
-      return "Hi Penelope! It's Felix. How are you?"
-    end
+    "Hi #{friend.name}! It's #{self.name}. How are you?"
   end
 
   def start_conversation (person, topic)
